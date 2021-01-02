@@ -45,4 +45,16 @@ RUN adduser --disabled-password \
 # Copy contents to user home
 COPY . ${HOME}
 RUN chown -R ${NB_UID} ${HOME}
+
+# Copy entrypoint
+COPY entrypoint.sh /
+
+# Give right permissions
+RUN chmod 755 /entrypoint.sh
+
+# Set entrypoint
+ENTRYPOINT ["/entrypoint.sh"]
+
+# User & workdir
 USER ${NB_USER}
+WORKDIR /home/jovyan/notebooks
