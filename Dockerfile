@@ -4,18 +4,6 @@ MAINTAINER Stefano Alberto Russo <stefano.russo@gmail.com>
 # Set non-interactive
 ENV DEBIAN_FRONTEND noninteractive
 
-# Prepare notebook user
-ARG NB_USER=ubuntu
-ARG NB_UID=1000
-ENV USER ${NB_USER}
-ENV NB_UID ${NB_UID}
-ENV HOME /home/${NB_USER}
-
-RUN adduser --disabled-password \
-    --gecos "Default user" \
-    --uid ${NB_UID} \
-    ${NB_USER}
-
 # Update apt cache
 RUN apt-get update
 
@@ -42,8 +30,19 @@ RUN pip3 install notebook==5.7.10
 # Install Timeseria
 RUN pip3 install git+https://github.com/sarusso/Timeseria.git@299c296
 
-# Make sure the contents of our repo are in ${HOME}
+# Prepare notebook user
+ARG NB_USER=jovyan
+ARG NB_UID=1000
+ENV USER ${NB_USER}
+ENV NB_UID ${NB_UID}
+ENV HOME /home/${NB_USER}
+
+RUN adduser --disabled-password \
+    --gecos "Default user" \
+    --uid ${NB_UID} \
+    ${NB_USER}
+
+# Copy contents to user home
 COPY . ${HOME}
 RUN chown -R ${NB_UID} ${HOME}
-
 USER ${NB_USER}
