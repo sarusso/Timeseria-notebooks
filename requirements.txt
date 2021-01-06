@@ -13,4 +13,4 @@ cython==0.29.21
 pystan==2.19.1.1
 fbprophet==0.6
 plotly==4.9.0
-git+https://github.com/sarusso/Timeseria.git@299c296
+git+https://github.com/sarusso/Timeseria.git@83c2172
