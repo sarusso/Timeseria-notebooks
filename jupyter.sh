@@ -5,24 +5,27 @@ if [[ "x$BUILD" != "xFalse" ]]; then
 
     # Build test environment
     echo -e "\n==============================="
-    echo -e "|  Building env container     |"
+    echo -e "|  Building Docker container  |"
     echo -e "===============================\n"
 
     if [[ "x$CACHE" == "xFalse" ]]; then
-        docker build --no-cache . -t timeseria_jupyter_container
+        docker build --no-cache . -t timeseria-notebooks
     else
-        docker build . -t timeseria_jupyter_container
+        docker build . -t timeseria-notebooks
     fi
 fi
             
-# Start testing
+# Start Jupyter
 echo -e  "\n==============================="
 echo -e  "|   Running Jupyter           |"
 echo -e  "===============================\n"
 
-# Reduce verbosity and disable Python buffering
-ENV_VARS="PYTHONWARNINGS=ignore TF_CPP_MIN_LOG_LEVEL=3 PYTHONUNBUFFERED=on EXTENDED_TESTING=False LOGLEVEL=$LOGLEVEL"
-
-docker run -p8888:8888 -v $PWD:/home/jovyan/notebooks -it timeseria_jupyter_container /bin/bash -c "$ENV_VARS && jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token=''"
+if [[ "x$LIVE" == "xTrue" ]]; then
+    echo "Running with live code changes"
+    docker run -v $PWD:/home/jovyan/notebooks -p8888:8888 -it timeseria-notebooks
+else
+    echo "Running without live code changes. Use LIVE=True to enable them."
+    docker run -p8888:8888 -it timeseria-notebooks
+fi
 
 
