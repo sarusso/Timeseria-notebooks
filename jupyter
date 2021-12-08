@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo $@
+
+if [ "$1" = "lab" ] ; then
+   echo "Removing lab invocation and replacing it with notebook"
+   shift
+elif [ "$1" = "notebook" ] ; then
+   shift
+else
+   :
+fi
+
+echo $@
+exec jupyter_or notebook $@

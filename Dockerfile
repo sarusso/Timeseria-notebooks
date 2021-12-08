@@ -26,6 +26,12 @@ COPY entrypoint.sh /
 RUN chmod 755 /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
+# Cheat to run a Notebook server instead of a Jupyter Lab
+RUN mv /usr/local/bin/jupyter /usr/local/bin/jupyter_or
+COPY jupyter /usr/local/bin/jupyter
+RUN chmod 755 /usr/local/bin/jupyter
+
 # User & workdir
 USER ${NB_USER}
 WORKDIR /home/jovyan/notebooks
+
