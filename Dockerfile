@@ -1,9 +1,9 @@
-FROM sarusso/timeseria:v0.1.1
+FROM sarusso/timeseria:v0.1.3
 MAINTAINER Stefano Alberto Russo <stefano.russo@gmail.com>
 
-# Install Timeseria
-#RUN pip3 install git+https://github.com/sarusso/Timeseria.git@v0.1.1
-RUN cd /opt/Timeseria && pip3 --use-feature=in-tree-build install . 
+# Install Timeseria (it is already located in /opt/timeseria and its
+# deps already installed, but this makes it autoatically importable)
+RUN pip3 install timeseria==0.1.3
 
 # Prepare notebook user for Binder
 ARG NB_USER=jovyan
