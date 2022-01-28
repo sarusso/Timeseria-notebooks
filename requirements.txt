@@ -1,8 +1,8 @@
 # Timeseria
-timeseria==0.1.5
+timeseria==0.1.6
 
 # Optional
 tensorflow==2.7.0   # TensorFlow (also -gpu, -macos or -aarch64 variants)
-pmdarima==1.8       # AARIMA
-statsmodels==0.12.1 # ARIMA, SARIMAX
-#fbprophet==0.6     # Facebook's Prophet
+#pmdarima==1.8       # AARIMA
+#statsmodels==0.12.1 # ARIMA, SARIMAX
+#fbprophet==0.6      # Facebook's Prophet
