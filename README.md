@@ -1,5 +1,5 @@
 # Timeseria-notebooks
-Example notebooks using [Timeseria](https://github.com/sarusso/Timeseria)  - a time series processing library.
+Example notebooks using [Timeseria](https://github.com/sarusso/Timeseria): an object-oriented time series processing library.
 
 Run with:
 
@@ -8,4 +8,7 @@ Run with:
 
 Or, install Timeseria (`pip install timeseria==0.1.6`) and use them from your own Jupyter Notebook server.
 
-**Note:** the interactive plotting engine does not work in Jupyter Lab due to recent security restrictions.
+**Notes:**
+
+- In case of bugs with the GitHub built-in Notebooks rendering engine (e.g. outputs not shown) you can head to [Timeseria notebooks on nbviewer](https://nbviewer.org/github/sarusso/Timeseria-notebooks/tree/master/notebooks/) to visualize them.
+- The interactive plotting engine does not work in Jupyter Lab due to recent security restrictions.
