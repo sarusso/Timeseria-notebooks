@@ -3,10 +3,10 @@ Example notebooks using [Timeseria](https://github.com/sarusso/Timeseria): an ob
 
 Run with:
 
-    docker run -it -p8888:8888 -v$PWD/notebooks:/notebooks sarusso/timeseria:v0.1.6
+    docker run -it -p8888:8888 -v$PWD/notebooks:/notebooks sarusso/timeseria:v1.0.0
 
 
-Or, install Timeseria (`pip install timeseria==0.1.6`) and use them from your own Jupyter Notebook server.
+Or, install Timeseria (`pip install timeseria==1.0.0`) and use them from your own Jupyter Notebook server.
 
 **Notes:**
 
