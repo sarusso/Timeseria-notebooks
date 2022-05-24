@@ -1,5 +1,5 @@
 # Timeseria
-timeseria==0.2.0
+timeseria==1.0.1
 
 # Optional
 tensorflow==2.7.0   # TensorFlow (also -gpu, -macos or -aarch64 variants)
