@@ -12,3 +12,5 @@ Or, install Timeseria (`pip install timeseria==1.0.1`) and use them from your ow
 
 - In case of bugs with the GitHub built-in Notebooks rendering engine (e.g. outputs not shown) you can head to [Timeseria notebooks on nbviewer](https://nbviewer.org/github/sarusso/Timeseria-notebooks/tree/master/notebooks/) to visualize them.
 - The interactive plotting engine does not work in Jupyter Lab due to recent security restrictions.
+
+<iframe src="https://nbviewer.org/github/sarusso/Timeseria-notebooks/tree/master/notebooks/" width="100%" height="600"></iframe>
