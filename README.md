@@ -5,8 +5,7 @@ Run with:
 
     docker run -it -p8888:8888 -v$PWD/notebooks:/notebooks sarusso/timeseria:v1.0.1
 
-
-Or, install Timeseria (`pip install timeseria==1.0.1`) and use them from your own Jupyter Notebook server.
+Or, install Timeseria (`pip install timeseria==1.0.1`) and open them within your own Jupyter Notebook server.
 
 **Notes:**
 
