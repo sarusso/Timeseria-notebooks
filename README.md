@@ -1,7 +1,9 @@
 # Timeseria-notebooks
 Example notebooks using [Timeseria](https://github.com/sarusso/Timeseria): an object-oriented time series processing library.
 
-⚠️ These Notebooks render with limited features (e.g. no plots) if opened on GitHub, please open them using NBViewer:
+⚠️ These Notebooks render with limited features (e.g. no plots) if opened on GitHub, please open them using [NBViewer](https://nbviewer.org/github/sarusso/Timeseria-notebooks/tree/master/notebooks/) with the following links.
+
+Available Notebooks:
 
 *  [A Million Points](https://nbviewer.org/github/sarusso/Timeseria-notebooks/blob/master/notebooks/A%20Million%20Points.ipynb)
 *   [Forecasting - Advanced Evaluation.ipynb](https://nbviewer.org/github/sarusso/Timeseria-notebooks/blob/master/notebooks/Forecasting%20-%20Advanced%20Evaluation.ipynb)
