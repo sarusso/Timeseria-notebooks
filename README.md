@@ -14,7 +14,7 @@ Available notebooks:
 *   [Operations.ipynb](notebooks/Operations.ipynb)
 *   [Plotting.ipynb](notebooks/Plotting.ipynb)
 *   [Quickstart.ipynb](notebooks/Quickstart.ipynb)
-*   [Welcome.ipynb](notebooks/blob/master/notebooks/Welcome.ipynb)
+*   [Welcome.ipynb](notebooks/Welcome.ipynb)
 
 You can also run them interactively using the Timeseria Docker container:
 
