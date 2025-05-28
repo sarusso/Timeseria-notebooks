@@ -18,6 +18,6 @@ Available notebooks:
 
 You can also run them interactively using the Timeseria Docker container:
 
-    docker run -it -p8888:8888 -v$PWD/notebooks:/notebooks sarusso/timeseria:v2.0.0
+    docker run -it -p8888:8888 -v$PWD/notebooks:/notebooks sarusso/timeseria:v2.2.0
 
-Or, you can install Timeseria (`pip install timeseria`) and run them within your own environment. In this case please ensure Timeseria is version 2.
+Or, you can install Timeseria (`pip install timeseria`) and run them within your own environment. In this case please ensure Timeseria >= v2.2.
