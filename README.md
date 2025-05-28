@@ -11,6 +11,8 @@ Available notebooks:
 *   [Forecasting - Advanced Evaluation.ipynb](notebooks/Forecasting%20-%20Advanced%20Evaluation.ipynb)
 *   [Forecasting - Temperature - Periodic Averages.ipynb](notebooks/Forecasting%20-%20Temperature%20-%20Periodic%20Averages.ipynb)
 *   [Forecasting - Temperature and humidity - LSTM.ipynb](notebooks/Forecasting%20-%20Temperature%20and%20humidity%20-%20LSTM.ipynb)
+*   [Forecasting - Temperature - Probabilistic LSTM.ipynb](notebooks/Forecasting%20-%20Temperature%20-%20Probabilistic%20LSTM.ipynb)
+*   [Forecasting - Temperature - Probabilistic Periodic Averages.ipynb](notebooks/Forecasting%20-%20Temperature%20-%20Probabilistic%20Periodic%20Averages.ipynb)
 *   [Operations.ipynb](notebooks/Operations.ipynb)
 *   [Plotting.ipynb](notebooks/Plotting.ipynb)
 *   [Quickstart.ipynb](notebooks/Quickstart.ipynb)
