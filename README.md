@@ -11,6 +11,7 @@ Available notebooks:
 *   [Forecasting - Advanced Evaluation.ipynb](notebooks/Forecasting%20-%20Advanced%20Evaluation.ipynb)
 *   [Forecasting - Temperature - Periodic Averages.ipynb](notebooks/Forecasting%20-%20Temperature%20-%20Periodic%20Averages.ipynb)
 *   [Forecasting - Temperature and humidity - LSTM.ipynb](notebooks/Forecasting%20-%20Temperature%20and%20humidity%20-%20LSTM.ipynb)
+*   [Forecasting - Temperature - LSTM - Probabilistic calibration.ipynb](notebooks/Forecasting%20-%20Temperature%20-%20LSTM%20-%20Probabilistic%20calibration.ipynb)
 *   [Forecasting - Temperature - Probabilistic LSTM.ipynb](notebooks/Forecasting%20-%20Temperature%20-%20Probabilistic%20LSTM.ipynb)
 *   [Forecasting - Temperature - Probabilistic Periodic Averages.ipynb](notebooks/Forecasting%20-%20Temperature%20-%20Probabilistic%20Periodic%20Averages.ipynb)
 *   [Operations.ipynb](notebooks/Operations.ipynb)
@@ -20,6 +21,6 @@ Available notebooks:
 
 You can also run them interactively using the Timeseria Docker container:
 
-    docker run -it -p8888:8888 -v$PWD/notebooks:/notebooks sarusso/timeseria:v2.2.0
+    docker run -it -p8888:8888 -v$PWD/notebooks:/notebooks sarusso/timeseria:v2.3.0
 
-Or, you can install Timeseria (`pip install timeseria`) and run them within your own environment. In this case please ensure Timeseria >= v2.2.
+Or, you can install Timeseria (`pip install timeseria`) and run them within your own environment. In this case please ensure Timeseria >= v2.3.
